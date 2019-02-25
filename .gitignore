@@ -1,0 +1,29 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+/to-do/node_modules
+/to-do/.pnp
+/to-do/.pnp.js
+
+# testing
+/to-do/coverage
+
+# production
+/to-do/build
+
+# misc
+/to-do/.DS_Store
+/to-do/.env.local
+/to-do/.env.development.local
+/to-do/.env.test.local
+/to-do/.env.production.local
+
+/to-do/npm-debug.log*
+/to-do/yarn-debug.log*
+/to-do/yarn-error.log*
+.vscode
+Part-1.md
+Part-2.md
+Part-3.md

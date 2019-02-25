@@ -1,0 +1,18 @@
+{
+  "name": "my-node-ap",
+  "version": "1.0.0",
+  "description": "Best node app ever.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Hassan Saleh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "pg": "^7.8.0"
+  }
+}

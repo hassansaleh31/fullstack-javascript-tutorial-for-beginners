@@ -1,0 +1,51 @@
+body {
+  margin: 1em;
+  color: #171717;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+button {
+  margin-left: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: .5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  background-color: rgb(75, 245, 165);
+}
+
+input {
+  padding: .5em;
+  border: 2px solid #b9b9b9;
+  border-radius: .5em;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin: .5em 0;
+}
+
+li p {
+  margin: 0;
+}
+
+.task_done {
+  text-decoration: line-through;
+}
+
+
+li button {
+  background-color: rgb(250, 104, 93);
+  color: white;
+}
