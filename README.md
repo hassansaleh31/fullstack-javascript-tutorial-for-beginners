@@ -6,4 +6,4 @@ Tutorial links:
 
 1. [Part-1 [The Backend]](https://hassansaleh.info/p/5)
 2. [Part-2 [The Frontend]](https://hassansaleh.info/p/6)
-3. [Part-2 [Deployment]](https://hassansaleh.info/p/7)
+3. [Part-3 [Deployment]](https://hassansaleh.info/p/7)
