@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/postgres-data
 
 /to-do/node_modules
 /to-do/.pnp

@@ -1,0 +1,27 @@
+version: "3"
+services:
+  # Indentation is required to indicate nesting
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - "./postgres-data:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=my_username
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DB=my_username
+  server:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    environment:
+      - PGHOST=db
+      - PGUSER=my_username
+      - PGDATABASE=my_username
+      - PGPASSWORD=mysecretpassword
+      - PGPORT=5432

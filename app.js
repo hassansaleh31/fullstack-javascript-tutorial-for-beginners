@@ -9,13 +9,13 @@ const bodyParser = require('body-parser');
 app.use(cors())
 app.use(bodyParser.json())
 
-const pool = new Pool({
-    user: 'postgres',
-    host: 'postgres.localhost',
-    database: 'postgres',
-    password: 'mysecretpassword',
-    port: 5432,
-})
+console.log(process.env.PGHOST)
+console.log(process.env.PGUSER)
+console.log(process.env.PGDATABASE)
+console.log(process.env.PGPASSWORD)
+console.log(process.env.PGPORT)
+
+const pool = new Pool()
 
 const createTabelString = `
 	CREATE TABLE IF NOT EXISTS tasks(
@@ -28,6 +28,7 @@ const createTabelString = `
 pool.query(createTabelString, function (err, res) {
     if (err) {
         console.error(err);
+        process.exit(1);
     } else {
         console.log(res);
     }
